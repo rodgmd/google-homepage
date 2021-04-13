@@ -19,24 +19,59 @@ body {
     box-sizing: inherit;
 }
 
-header {
-    margin: 245px auto 20px;
-    width: 280px;
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
 
+.navbar-links {
+    margin-right: 16px;
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.navbar-links:hover {
+    text-decoration: underline;
+}
+
+.navbar-icons:first-child {
+    width: 40%;
+    height: auto;
+}
+
+.navbar-icons:last-child {
+    width: 30px;
+    height: auto;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 115px;
+    margin-bottom: 35px;
 }
 
 main {
-    margin: 0 auto;
-    width: 582px;
+    display: flex;
 }
 
 #search-input-box {
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 582px;
+    align-content: center;
     height: 44px;
     border: 1px #dfe1e3 solid;
     border-radius: 30px;
+    box-shadow: 1px 2px 6px #dfe1e3;
 }
 
 .search-icon {
@@ -46,7 +81,7 @@ main {
 }
 
 #search-input-box input {
-    width: 582px;
+    width: 462px;
     height: 41px;
     border: none;
     margin: 0;
@@ -56,12 +91,13 @@ main {
 
 #search-input-box input[type=text]:focus {
     outline: none;
-  }
+}
 
 #buttons-box {
-    margin: 0 auto;
-    width: 335px;
-    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .search-button {
@@ -81,23 +117,23 @@ main {
     border: 1px solid #dfe1e3;
 }
 
-#language-box {
+#search-language-box {
     margin: 0 auto;
     width: 230px;
     font-size: 12px;
     color: #222;
 }
 
-.language-links {
+.search-language-links {
     margin: 25px 0;
     color: #1a0dab;
     text-decoration: none;
 }
 
-.language-links:hover {
+.search-language-links:hover {
     text-decoration: underline;
 }
 
-.language-links:first-child {
+.search-language-links:first-child {
     margin-right: 5px;
 }
